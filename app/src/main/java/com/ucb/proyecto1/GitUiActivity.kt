@@ -89,7 +89,7 @@ fun GitUi(modifier: Modifier = Modifier, context: Context) {
 
 
             CoroutineScope(Dispatchers.IO).launch {
-                val response = dataSource.getAvatarInfo("calyr")
+                val response = dataSource.getAvatarInfo(userId)
                 urlImage = response.url
             }
 
